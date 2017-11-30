@@ -5,10 +5,10 @@ import java.util.List;
 
 import javax.persistence.Entity;
 
-import com.miguelkvidal.querygenerator.util.QJoin;
-import com.miguelkvidal.querygenerator.util.QOrder;
-import com.miguelkvidal.querygenerator.util.condition.QCondition;
-import com.miguelkvidal.querygenerator.util.expression.QExpression;
+import com.miguelkvidal.querygenerator.api.condition.QCondition;
+import com.miguelkvidal.querygenerator.api.expression.QExpression;
+import com.miguelkvidal.querygenerator.api.joining.QJoin;
+import com.miguelkvidal.querygenerator.api.ordering.QOrder;
 
 public abstract class QConfiguration< T > {
 

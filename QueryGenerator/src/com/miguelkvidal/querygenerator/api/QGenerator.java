@@ -16,11 +16,11 @@ import javax.persistence.criteria.Predicate;
 import javax.persistence.criteria.Root;
 import javax.persistence.criteria.Selection;
 
-import com.miguelkvidal.querygenerator.util.QJoin;
-import com.miguelkvidal.querygenerator.util.QOrder;
-import com.miguelkvidal.querygenerator.util.condition.QCondition;
-import com.miguelkvidal.querygenerator.util.expression.QAgregate;
-import com.miguelkvidal.querygenerator.util.expression.QExpression;
+import com.miguelkvidal.querygenerator.api.condition.QCondition;
+import com.miguelkvidal.querygenerator.api.expression.QAgregate;
+import com.miguelkvidal.querygenerator.api.expression.QExpression;
+import com.miguelkvidal.querygenerator.api.joining.QJoin;
+import com.miguelkvidal.querygenerator.api.ordering.QOrder;
 
 public class QGenerator< T > {
 

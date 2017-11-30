@@ -1,4 +1,4 @@
-package com.miguelkvidal.querygenerator.util.expression;
+package com.miguelkvidal.querygenerator.api.expression;
 
 import javax.persistence.criteria.Expression;
 
@@ -37,7 +37,7 @@ public final class QConversion< T > implements QExpression {
 		if ( this == obj ) { return true; }
 		if ( obj == null ) { return false; }
 		if ( ! ( obj instanceof QConversion ) ) { return false; }
-		QConversion< ? > other = ( com.miguelkvidal.querygenerator.util.expression.QConversion< ? > ) obj;
+		QConversion< ? > other = ( com.miguelkvidal.querygenerator.api.expression.QConversion< ? > ) obj;
 		if ( !expression.equals( other.expression ) ) { return false; }
 		if ( !type.equals( other.type ) ) { return false; }
 		return true;

@@ -1,4 +1,4 @@
-package com.miguelkvidal.querygenerator.util.condition.predicate;
+package com.miguelkvidal.querygenerator.api.condition.predicate;
 
 import javax.persistence.criteria.Predicate;
 

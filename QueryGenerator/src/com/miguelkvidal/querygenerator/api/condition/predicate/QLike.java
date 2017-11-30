@@ -1,12 +1,12 @@
-package com.miguelkvidal.querygenerator.util.condition.predicate;
+package com.miguelkvidal.querygenerator.api.condition.predicate;
 
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.Expression;
 import javax.persistence.criteria.Predicate;
 
 import com.miguelkvidal.querygenerator.api.QGenerator;
-import com.miguelkvidal.querygenerator.util.expression.QConcat;
-import com.miguelkvidal.querygenerator.util.expression.QExpression;
+import com.miguelkvidal.querygenerator.api.expression.QConcat;
+import com.miguelkvidal.querygenerator.api.expression.QExpression;
 
 public class QLike implements QPredicate {
 

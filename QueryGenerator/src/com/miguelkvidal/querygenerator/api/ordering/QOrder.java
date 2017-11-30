@@ -1,11 +1,11 @@
-package com.miguelkvidal.querygenerator.util;
+package com.miguelkvidal.querygenerator.api.ordering;
 
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.Expression;
 import javax.persistence.criteria.Order;
 
 import com.miguelkvidal.querygenerator.api.QGenerator;
-import com.miguelkvidal.querygenerator.util.expression.QExpression;
+import com.miguelkvidal.querygenerator.api.expression.QExpression;
 
 public final class QOrder {
 

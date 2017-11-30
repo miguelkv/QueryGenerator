@@ -1,4 +1,4 @@
-package com.miguelkvidal.querygenerator.util.expression;
+package com.miguelkvidal.querygenerator.api.expression;
 
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.Expression;
@@ -32,7 +32,7 @@ public final class QLiteral< V > implements QExpression {
 		if ( this == obj ) { return true; }
 		if ( obj == null ) { return false; }
 		if ( ! ( obj instanceof QLiteral ) ) { return false; }
-		QLiteral< ? > other = ( com.miguelkvidal.querygenerator.util.expression.QLiteral< ? > ) obj;
+		QLiteral< ? > other = ( com.miguelkvidal.querygenerator.api.expression.QLiteral< ? > ) obj;
 		if ( value == null ) {
 			if ( other.value != null ) { return false; }
 		} else if ( !value.equals( other.value ) ) { return false; }

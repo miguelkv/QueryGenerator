@@ -1,4 +1,4 @@
-package com.miguelkvidal.querygenerator.util;
+package com.miguelkvidal.querygenerator.api.joining;
 
 import java.util.Map;
 

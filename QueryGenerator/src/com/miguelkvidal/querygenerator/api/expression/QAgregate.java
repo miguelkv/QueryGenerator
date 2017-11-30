@@ -1,4 +1,4 @@
-package com.miguelkvidal.querygenerator.util.expression;
+package com.miguelkvidal.querygenerator.api.expression;
 
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.Expression;
