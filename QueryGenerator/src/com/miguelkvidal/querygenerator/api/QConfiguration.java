@@ -1,14 +1,14 @@
-package geradorquery.api;
+package com.miguelkvidal.querygenerator.api;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.Entity;
 
-import geradorquery.util.QJoin;
-import geradorquery.util.QOrder;
-import geradorquery.util.condition.QCondition;
-import geradorquery.util.expression.QExpression;
+import com.miguelkvidal.querygenerator.util.QJoin;
+import com.miguelkvidal.querygenerator.util.QOrder;
+import com.miguelkvidal.querygenerator.util.condition.QCondition;
+import com.miguelkvidal.querygenerator.util.expression.QExpression;
 
 public abstract class QConfiguration< T > {
 

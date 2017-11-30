@@ -1,8 +1,8 @@
-package geradorquery.util.expression;
+package com.miguelkvidal.querygenerator.util.expression;
 
 import javax.persistence.criteria.Expression;
 
-import geradorquery.api.QGenerator;
+import com.miguelkvidal.querygenerator.api.QGenerator;
 
 public interface QExpression {
 

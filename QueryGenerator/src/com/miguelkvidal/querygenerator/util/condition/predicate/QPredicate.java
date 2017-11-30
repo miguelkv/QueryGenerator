@@ -1,8 +1,8 @@
-package geradorquery.util.condition.predicate;
+package com.miguelkvidal.querygenerator.util.condition.predicate;
 
 import javax.persistence.criteria.Predicate;
 
-import geradorquery.api.QGenerator;
+import com.miguelkvidal.querygenerator.api.QGenerator;
 
 public interface QPredicate {
 

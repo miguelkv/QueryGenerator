@@ -1,4 +1,4 @@
-package geradorquery.util;
+package com.miguelkvidal.querygenerator.util;
 
 import java.util.Map;
 

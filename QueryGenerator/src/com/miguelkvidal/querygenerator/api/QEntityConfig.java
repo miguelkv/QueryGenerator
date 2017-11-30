@@ -1,4 +1,4 @@
-package geradorquery.api;
+package com.miguelkvidal.querygenerator.api;
 
 public class QEntityConfig< T > extends QConfiguration< T > {
 

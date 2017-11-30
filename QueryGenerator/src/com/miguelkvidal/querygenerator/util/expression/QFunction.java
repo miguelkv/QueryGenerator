@@ -1,11 +1,11 @@
-package geradorquery.util.expression;
+package com.miguelkvidal.querygenerator.util.expression;
 
 import java.util.Arrays;
 
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.Expression;
 
-import geradorquery.api.QGenerator;
+import com.miguelkvidal.querygenerator.api.QGenerator;
 
 public final class QFunction implements QExpression {
 

@@ -1,12 +1,12 @@
-package geradorquery.util.condition.predicate;
+package com.miguelkvidal.querygenerator.util.condition.predicate;
 
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.Expression;
 import javax.persistence.criteria.Predicate;
 
-import geradorquery.api.QGenerator;
-import geradorquery.util.expression.QExpression;
-import geradorquery.util.expression.QLiteral;
+import com.miguelkvidal.querygenerator.api.QGenerator;
+import com.miguelkvidal.querygenerator.util.expression.QExpression;
+import com.miguelkvidal.querygenerator.util.expression.QLiteral;
 
 public class QBetween implements QPredicate {
 

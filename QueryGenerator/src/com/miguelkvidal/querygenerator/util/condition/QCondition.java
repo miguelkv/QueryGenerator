@@ -1,4 +1,4 @@
-package geradorquery.util.condition;
+package com.miguelkvidal.querygenerator.util.condition;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,8 +6,8 @@ import java.util.List;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.Predicate;
 
-import geradorquery.api.QGenerator;
-import geradorquery.util.condition.predicate.QPredicate;
+import com.miguelkvidal.querygenerator.api.QGenerator;
+import com.miguelkvidal.querygenerator.util.condition.predicate.QPredicate;
 
 public final class QCondition {
 

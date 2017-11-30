@@ -1,10 +1,10 @@
-package geradorquery.util.expression;
+package com.miguelkvidal.querygenerator.util.expression;
 
 import java.util.Map;
 
 import javax.persistence.criteria.Path;
 
-import geradorquery.api.QGenerator;
+import com.miguelkvidal.querygenerator.api.QGenerator;
 
 public final class QAttribute implements QExpression {
 

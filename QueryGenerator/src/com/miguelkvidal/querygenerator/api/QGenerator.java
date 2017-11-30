@@ -1,4 +1,4 @@
-package geradorquery.api;
+package com.miguelkvidal.querygenerator.api;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -16,11 +16,11 @@ import javax.persistence.criteria.Predicate;
 import javax.persistence.criteria.Root;
 import javax.persistence.criteria.Selection;
 
-import geradorquery.util.QJoin;
-import geradorquery.util.QOrder;
-import geradorquery.util.condition.QCondition;
-import geradorquery.util.expression.QAgregate;
-import geradorquery.util.expression.QExpression;
+import com.miguelkvidal.querygenerator.util.QJoin;
+import com.miguelkvidal.querygenerator.util.QOrder;
+import com.miguelkvidal.querygenerator.util.condition.QCondition;
+import com.miguelkvidal.querygenerator.util.expression.QAgregate;
+import com.miguelkvidal.querygenerator.util.expression.QExpression;
 
 public class QGenerator< T > {
 

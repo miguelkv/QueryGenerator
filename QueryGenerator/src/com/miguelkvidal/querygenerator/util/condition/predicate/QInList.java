@@ -1,4 +1,4 @@
-package geradorquery.util.condition.predicate;
+package com.miguelkvidal.querygenerator.util.condition.predicate;
 
 import java.util.Arrays;
 import java.util.Collection;
@@ -7,8 +7,8 @@ import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.Expression;
 import javax.persistence.criteria.Predicate;
 
-import geradorquery.api.QGenerator;
-import geradorquery.util.expression.QExpression;
+import com.miguelkvidal.querygenerator.api.QGenerator;
+import com.miguelkvidal.querygenerator.util.expression.QExpression;
 
 public class QInList implements QPredicate {
 

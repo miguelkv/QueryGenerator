@@ -1,8 +1,8 @@
-package geradorquery.util.expression;
+package com.miguelkvidal.querygenerator.util.expression;
 
 import javax.persistence.criteria.Expression;
 
-import geradorquery.api.QGenerator;
+import com.miguelkvidal.querygenerator.api.QGenerator;
 
 public final class QConversion< T > implements QExpression {
 
@@ -37,7 +37,7 @@ public final class QConversion< T > implements QExpression {
 		if ( this == obj ) { return true; }
 		if ( obj == null ) { return false; }
 		if ( ! ( obj instanceof QConversion ) ) { return false; }
-		QConversion< ? > other = ( geradorquery.util.expression.QConversion< ? > ) obj;
+		QConversion< ? > other = ( com.miguelkvidal.querygenerator.util.expression.QConversion< ? > ) obj;
 		if ( !expression.equals( other.expression ) ) { return false; }
 		if ( !type.equals( other.type ) ) { return false; }
 		return true;

@@ -1,11 +1,11 @@
-package geradorquery.util;
+package com.miguelkvidal.querygenerator.util;
 
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.Expression;
 import javax.persistence.criteria.Order;
 
-import geradorquery.api.QGenerator;
-import geradorquery.util.expression.QExpression;
+import com.miguelkvidal.querygenerator.api.QGenerator;
+import com.miguelkvidal.querygenerator.util.expression.QExpression;
 
 public final class QOrder {
 
