@@ -13,24 +13,25 @@ import javax.persistence.criteria.Root;
 import org.junit.Assert;
 import org.junit.Test;
 
+import com.miguelkvidal.querygenerator.api.QEntityConfig;
+import com.miguelkvidal.querygenerator.api.QGeneralUseConfig;
+import com.miguelkvidal.querygenerator.api.QGenerator;
+import com.miguelkvidal.querygenerator.api.condition.QCondition;
+import com.miguelkvidal.querygenerator.api.condition.predicate.QBetween;
+import com.miguelkvidal.querygenerator.api.condition.predicate.QCompare;
+import com.miguelkvidal.querygenerator.api.condition.predicate.QIsNull;
+import com.miguelkvidal.querygenerator.api.expression.QAttribute;
+import com.miguelkvidal.querygenerator.api.expression.QConcat;
+import com.miguelkvidal.querygenerator.api.expression.QConversion;
+import com.miguelkvidal.querygenerator.api.expression.QExpression;
+import com.miguelkvidal.querygenerator.api.expression.QFunction;
+import com.miguelkvidal.querygenerator.api.expression.QLiteral;
+import com.miguelkvidal.querygenerator.api.expression.aggregation.QAgregate;
+import com.miguelkvidal.querygenerator.api.join.QJoin;
+import com.miguelkvidal.querygenerator.api.order.QOrder;
+
 import entities.City;
 import entities.Country;
-import geradorquery.api.QEntityConfig;
-import geradorquery.api.QGeneralUseConfig;
-import geradorquery.api.QGenerator;
-import geradorquery.util.QJoin;
-import geradorquery.util.QOrder;
-import geradorquery.util.condition.QCondition;
-import geradorquery.util.condition.predicate.QBetween;
-import geradorquery.util.condition.predicate.QCompare;
-import geradorquery.util.condition.predicate.QIsNull;
-import geradorquery.util.expression.QAgregate;
-import geradorquery.util.expression.QAttribute;
-import geradorquery.util.expression.QConcat;
-import geradorquery.util.expression.QConversion;
-import geradorquery.util.expression.QExpression;
-import geradorquery.util.expression.QFunction;
-import geradorquery.util.expression.QLiteral;
 
 public abstract class TestQueries {
 
@@ -40,6 +41,7 @@ public abstract class TestQueries {
 
 	private static final int	MAX_RESULTS		= 10;
 
+	@SuppressWarnings( "unused" )
 	private static final int	TOTAL_CITIES	= 4079;
 
 	private static final int	TOTAL_COUNTRIES	= 239;
