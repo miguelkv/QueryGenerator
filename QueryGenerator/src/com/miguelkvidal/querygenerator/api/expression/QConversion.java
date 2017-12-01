@@ -18,7 +18,7 @@ public final class QConversion< T > implements QExpression {
 
 	private final Class< T >	type;
 
-	private QConversion( QExpression theExpression, Class< T > theType ) {
+	public QConversion( QExpression theExpression, Class< T > theType ) {
 		if ( theType == null ) { throw new IllegalArgumentException( QConversion.MSG_NULL_TYPE ); }
 		if ( theExpression == null ) { throw new IllegalArgumentException( QConversion.MSG_NULL_EXPRESSION ); }
 

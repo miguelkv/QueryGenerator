@@ -25,7 +25,7 @@ public final class QFunction implements QExpression {
 
 	private final Class< ? >		type;
 
-	private QFunction( String theName, Class< ? > theType, QExpression... theParameters ) {
+	public QFunction( String theName, Class< ? > theType, QExpression... theParameters ) {
 		if ( theType == null ) { throw new IllegalArgumentException( QFunction.MSG_NULL_TYPE ); }
 		if ( theName == null ) { throw new IllegalArgumentException( QFunction.MSG_NULL_NAME ); }
 		if ( theName.trim( ).isEmpty( ) ) { throw new IllegalArgumentException( QFunction.MSG_EMPTY_NAME ); }

@@ -7,7 +7,7 @@ import javax.persistence.criteria.Expression;
 
 import com.miguelkvidal.querygenerator.api.QGenerator;
 
-public class QConcat implements QExpression {
+public final class QConcat implements QExpression {
 
 	private static final String MSG_NULL_EXPRESSION = "Expression must not be null.";
 
@@ -66,8 +66,8 @@ public class QConcat implements QExpression {
 
 	private final QExpression[ ] values;
 
-	private QConcat( QExpression[ ] others ) {
-		this.values = others;
+	public QConcat( QExpression[ ] theValues ) {
+		this.values = theValues;
 	}
 
 	@Override

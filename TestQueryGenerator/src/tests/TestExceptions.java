@@ -4,17 +4,18 @@ import javax.persistence.EntityManager;
 
 import org.junit.Test;
 
+import com.miguelkvidal.querygenerator.api.QConfiguration;
+import com.miguelkvidal.querygenerator.api.QGeneralUseConfig;
+import com.miguelkvidal.querygenerator.api.QGenerator;
+import com.miguelkvidal.querygenerator.api.condition.QCondition;
+import com.miguelkvidal.querygenerator.api.expression.QAttribute;
+import com.miguelkvidal.querygenerator.api.expression.QConversion;
+import com.miguelkvidal.querygenerator.api.expression.QFunction;
+import com.miguelkvidal.querygenerator.api.expression.aggregation.QAgregate;
+import com.miguelkvidal.querygenerator.api.join.QJoin;
+import com.miguelkvidal.querygenerator.api.order.QOrder;
+
 import entities.Country;
-import geradorquery.api.QConfiguration;
-import geradorquery.api.QGeneralUseConfig;
-import geradorquery.api.QGenerator;
-import geradorquery.util.QJoin;
-import geradorquery.util.QOrder;
-import geradorquery.util.condition.QCondition;
-import geradorquery.util.expression.QAgregate;
-import geradorquery.util.expression.QAttribute;
-import geradorquery.util.expression.QConversion;
-import geradorquery.util.expression.QFunction;
 
 public abstract class TestExceptions {
 

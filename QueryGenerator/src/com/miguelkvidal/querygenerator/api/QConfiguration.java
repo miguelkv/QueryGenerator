@@ -7,8 +7,8 @@ import javax.persistence.Entity;
 
 import com.miguelkvidal.querygenerator.api.condition.QCondition;
 import com.miguelkvidal.querygenerator.api.expression.QExpression;
-import com.miguelkvidal.querygenerator.api.joining.QJoin;
-import com.miguelkvidal.querygenerator.api.ordering.QOrder;
+import com.miguelkvidal.querygenerator.api.join.QJoin;
+import com.miguelkvidal.querygenerator.api.order.QOrder;
 
 public abstract class QConfiguration< T > {
 

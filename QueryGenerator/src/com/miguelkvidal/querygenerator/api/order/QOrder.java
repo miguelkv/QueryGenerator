@@ -1,54 +1,31 @@
-package com.miguelkvidal.querygenerator.api.ordering;
+package com.miguelkvidal.querygenerator.api.order;
 
-import javax.persistence.criteria.CriteriaBuilder;
-import javax.persistence.criteria.Expression;
 import javax.persistence.criteria.Order;
 
 import com.miguelkvidal.querygenerator.api.QGenerator;
 import com.miguelkvidal.querygenerator.api.expression.QExpression;
 
-public final class QOrder {
-
-	public static enum QOrderType {
-		ASC, DESC;
-	}
+public abstract class QOrder {
 
 	private static final String MSG_NULL_EXPRESSION = "Expression must not be null.";
 
 	public static QOrder asc( QExpression theExpression ) {
-		return new QOrder( theExpression, QOrderType.ASC );
+		return new QAscending( theExpression );
 	}
 
 	public static QOrder desc( QExpression theExpression ) {
-		return new QOrder( theExpression, QOrderType.DESC );
+		return new QDescending( theExpression );
 	}
 
-	private final QExpression	expression;
+	protected final QExpression expression;
 
-	private final QOrderType	type;
-
-	private QOrder( QExpression theExpression, QOrderType theType ) {
+	protected QOrder( QExpression theExpression ) {
 		if ( theExpression == null ) { throw new IllegalArgumentException( QOrder.MSG_NULL_EXPRESSION ); }
 
-		this.type = theType;
 		this.expression = theExpression;
 	}
 
-	public Order build( QGenerator< ? > theGenerator ) {
-
-		CriteriaBuilder cb = theGenerator.getCriteriaBuilder( );
-
-		Expression< ? > e = expression.build( theGenerator );
-
-		switch ( type ) {
-			case DESC:
-				return cb.desc( e );
-
-			case ASC:
-			default:
-				return cb.asc( e );
-		}
-	}
+	public abstract Order build( QGenerator< ? > theGenerator );
 
 	@Override
 	public boolean equals( Object obj ) {
@@ -57,7 +34,6 @@ public final class QOrder {
 		if ( ! ( obj instanceof QOrder ) ) { return false; }
 		QOrder other = ( QOrder ) obj;
 		if ( !expression.equals( other.expression ) ) { return false; }
-		if ( type != other.type ) { return false; }
 		return true;
 	}
 
@@ -66,13 +42,7 @@ public final class QOrder {
 		final int prime = 31;
 		int result = 1;
 		result = prime * result + expression.hashCode( );
-		result = prime * result + type.hashCode( );
 		return result;
-	}
-
-	@Override
-	public String toString( ) {
-		return expression + " " + type;
 	}
 
 }

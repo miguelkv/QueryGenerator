@@ -17,16 +17,16 @@ import javax.persistence.criteria.Root;
 import javax.persistence.criteria.Selection;
 
 import com.miguelkvidal.querygenerator.api.condition.QCondition;
-import com.miguelkvidal.querygenerator.api.expression.QAgregate;
 import com.miguelkvidal.querygenerator.api.expression.QExpression;
-import com.miguelkvidal.querygenerator.api.joining.QJoin;
-import com.miguelkvidal.querygenerator.api.ordering.QOrder;
+import com.miguelkvidal.querygenerator.api.expression.aggregation.QAgregate;
+import com.miguelkvidal.querygenerator.api.join.QJoin;
+import com.miguelkvidal.querygenerator.api.order.QOrder;
 
 public class QGenerator< T > {
 
-	private static final String				MSG_NULL_EM				= "Entity Manager must not be null.";
-
 	private static final String				MSG_NULL_CONFIGURATION	= "Configuration must not be null.";
+
+	private static final String				MSG_NULL_EM				= "Entity Manager must not be null.";
 
 	private final Map< String, Path< ? > >	attributes				= new HashMap<>( );
 
@@ -212,7 +212,7 @@ public class QGenerator< T > {
 				continue;
 			}
 
-			qj.process( attributes, root );
+			qj.build( attributes, root );
 		}
 	}
 

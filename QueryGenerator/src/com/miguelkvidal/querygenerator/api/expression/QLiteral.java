@@ -13,7 +13,7 @@ public final class QLiteral< V > implements QExpression {
 
 	private final V value;
 
-	private QLiteral( V theValue ) {
+	public QLiteral( V theValue ) {
 		value = theValue;
 	}
 

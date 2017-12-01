@@ -18,7 +18,7 @@ public final class QAttribute implements QExpression {
 
 	private final String path;
 
-	private QAttribute( String thePath ) {
+	public QAttribute( String thePath ) {
 		if ( thePath == null ) { throw new IllegalArgumentException( QAttribute.MSG_NULL_PATH ); }
 		if ( thePath.trim( ).isEmpty( ) ) { throw new IllegalArgumentException( QAttribute.MSG_EMPTY_PATH ); }
 
