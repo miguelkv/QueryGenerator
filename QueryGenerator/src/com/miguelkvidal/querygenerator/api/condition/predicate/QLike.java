@@ -19,7 +19,7 @@ public class QLike implements QPredicate {
 	}
 
 	public static QLike endsWith( QExpression theExpression, String theValue, boolean isCaseInsensitive ) {
-		return QLike.of( theExpression, QConcat.of( theValue, "%" ), isCaseInsensitive );
+		return QLike.of( theExpression, QConcat.of( "%", theValue ), isCaseInsensitive );
 	}
 
 	public static QLike of( QExpression theExpression, QExpression theValue, boolean isCaseInsensitive ) {
@@ -27,7 +27,7 @@ public class QLike implements QPredicate {
 	}
 
 	public static QLike startsWith( QExpression theExpression, String theValue, boolean isCaseInsensitive ) {
-		return QLike.of( theExpression, QConcat.of( "%", theValue ), isCaseInsensitive );
+		return QLike.of( theExpression, QConcat.of( theValue, "%" ), isCaseInsensitive );
 	}
 
 	private final QExpression	expression;
