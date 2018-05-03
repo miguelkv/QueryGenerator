@@ -74,18 +74,7 @@ public class QGenerator< T > {
 			criteriaQuery.where( condition );
 		}
 
-		int maxResults = configuration.getMaxResults( );
-		int firstResult = configuration.getFirstResult( );
-
 		TypedQuery< Long > tq = em.createQuery( criteriaQuery );
-
-		if ( maxResults > 0 ) {
-			tq.setMaxResults( maxResults );
-		}
-
-		if ( firstResult > 0 ) {
-			tq.setFirstResult( firstResult );
-		}
 
 		return tq;
 	}
